@@ -12,6 +12,7 @@ def load_css():
             css = f.read()
             st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
     else:
+        st.write(cssfile)
         st.warning(f"CSS file not found: {css_file}")
         
 def apply_custom_css():
