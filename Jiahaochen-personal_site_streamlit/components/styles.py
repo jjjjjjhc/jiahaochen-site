@@ -6,8 +6,7 @@ path = os.getcwd().replace("\\", "/")
 def load_css():
     """Load custom CSS from the static/css directory"""
     # Get the path to the CSS file
-    css_file = path+"/css/style.css" #os.path.join("static", "css", "style.css")
-    st.write(css_file)
+    css_file = os.path.join("static", "css", "style.css") #path+"/css/style.css"
     # Check if the file exists
     if os.path.exists(css_file):
         with open(css_file, "r") as f:
