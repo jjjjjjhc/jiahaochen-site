@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+import os, glob
 
 path = os.getcwd().replace("\\", "/")
 
@@ -8,6 +8,7 @@ def load_css():
     # Get the path to the CSS file
     css_file = os.path.join("static", "css", "style.css") #path+"/css/style.css"
     # Check if the file exists
+    st.write(glob.glob("*"))
     if os.path.exists(css_file):
         with open(css_file, "r") as f:
             css = f.read()
