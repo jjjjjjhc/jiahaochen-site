@@ -50,4 +50,4 @@ app.add_app("Resume Page", resume_page)
 app.add_app("Contact Page", contact_page)
 
 # Run the app
-#app.run()
+app.run()
